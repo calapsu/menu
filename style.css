@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  color: #0f425b;
+}
+
+.icons {
+  display: block;
+  width: 40;
+  height: 40px;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.icons:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+li {
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  margin-top: 25px;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-right: 1px solid #fff;
+}
+
+p {
+  display: none;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li a {
+  color: #0f425b;
+  font-size: 16px;
+  display: block;
+  padding: 0px 12px;
+  text-decoration: none;
+}
+
+span {
+  margin-right: 12px;
+  justify-content: center;
+}
+.linea {
+  border-right: 1px solid #a8a8a8;
+}
+.menu li a:hover {
+  color: #d49300;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+    margin-left: 33px;
+  }
+
+  .menu {
+    position: absolute;
+    background: #e0e3e3;
+    width: 45%;
+    margin-left: -80%;
+    margin-top: 34px;
+  }
+  .menu li a {
+    height: 45px;
+    border-right: none;
+    border-top: 1px solid #a8a8a8;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu li:hover {
+    background-color: #00405c;
+  }
+
+  .menu li a:hover {
+    color: #ffffff;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+    margin-left: 33px;
+    margin-top: 34px;
+  }
+  span {
+    border-right: none;
+  }
+
+  .icons {
+    margin-left: 6px;
+    margin-bottom: 12px;
+    width: 40;
+    height: 40px;
+  }
+
+  .linea {
+    border-right: none;
+  }
+
+  p {
+    display: flex;
+    font-size: 27px;
+  }
+
+  .intem2 {
+    margin-left: 115px;
+    margin-top: -38px;
+    float: left;
+  }
+}
